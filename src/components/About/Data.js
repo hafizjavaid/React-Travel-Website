@@ -1,5 +1,5 @@
-import image1 from "../../assets/about1.jpg";
-import image2 from "../../assets/about2.jpg";
+import image1 from "../../assets/about3.jpg";
+import image2 from "../../assets/about4.jpg";
 
 export const images = [
   {

@@ -2,8 +2,8 @@ import image1 from "../../assets/place1.jpg";
 import image2 from "../../assets/place2.jpg";
 import image3 from "../../assets/place3.jpg";
 import image4 from "../../assets/place4.jpg";
-// import image5 from "../../assets/place5.jpg";
-import image11 from "../../assets/place1.jpg";
+import image5 from "../../assets/discover2.jpg";
+import image6 from "../../assets/discover1.jpg";
 
 
 
@@ -37,14 +37,14 @@ export const places = [
         price: '$2499',
     },
     {
-        image: image2,
+        image: image5,
         rate: '4.8',
         title: 'Bali',
         subtitle: 'Indonesia',
         price: '$2499',
     },
     {
-        image: image11,
+        image: image6,
         rate: '5.0',
         title: 'Bora Bora',
         subtitle: 'Polinesia',
