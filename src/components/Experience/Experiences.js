@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
 import { experienceData, images } from "./data";
 const Experiences = () => {
@@ -10,23 +11,27 @@ const Experiences = () => {
       <div className="experience__container container grid">
         <div className="experience__content grid">
           {experienceData.map((exp) => (
-            <div className="experience__data" key={exp.number}>
-              <h2 className="experience__number">{exp.number}</h2>
-              <span className="experience__description">
-                {exp.title1} <br /> {exp.title2}
-              </span>
-            </div>
+            <Fade top key={exp.number}>
+              <div className="experience__data">
+                <h2 className="experience__number">{exp.number}</h2>
+                <span className="experience__description">
+                  {exp.title1} <br /> {exp.title2}
+                </span>
+              </div>
+            </Fade>
           ))}
         </div>
         <div className="experience__img grid">
           {images.map((image, i) => (
-            <div className="experience__overlay" key={i}>
-              <img
-                src={image.image}
-                alt="images-1"
-                className={image.classes.join(" ")}
-              />
-            </div>
+            <Fade top key={i}>
+              <div className="experience__overlay">
+                <img
+                  src={image.image}
+                  alt="images-1"
+                  className={image.classes.join(" ")}
+                />
+              </div>
+            </Fade>
           ))}
         </div>
       </div>
